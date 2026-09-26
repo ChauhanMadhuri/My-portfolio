@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application Form</title>
+</head>
+<body>
+
+<br><br>
+
+<center>
+
+<table style="border: 10px solid black;" border="2" cellpadding="15" width="60%" >
+    <tr>
+        <td align="center">
+
+            <h2>Job Application Form</h2>
+
+            <form  method="post">
+
+                <table border="10" cellpadding="16">
+
+                    <tr>
+                        <th>Full Name:</th>
+                        <td>
+                            <input type="text" placeholder="Enter your name" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Email Address:</th>
+                        <td>
+                            <input type="email" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Phone Number:</th>
+                        <td>
+                            <input type="tel" placeholder="123-456-7890" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Gender:</th>
+                        <td>
+                            <input type="radio" name="gender" required> Male
+                            <input type="radio" name="gender"> Female
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Job Role:</th>
+                        <td>
+                            <select required>
+                                <option selected disabled>-- Select Role --</option>
+                                <option>Web Developer</option>
+                                <option>Full Stack Developer</option>
+                                <option>Designer</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Date of Birth:</th>
+                        <td>
+                            <input type="date" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Favorite Color:</th>
+                        <td>
+                            <input type="color">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Upload Resume:</th>
+                        <td>
+                            <input type="file" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Skills:</th>
+                        <td>
+                            <input type="checkbox"> HTML
+                            <input type="checkbox"> CSS
+                            <input type="checkbox"> JavaScript
+                            <input type="checkbox"> React
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Cover Letter:</th>
+                        <td>
+                            <textarea rows="5" cols="30"
+                            placeholder="Write something about yourself..."></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+
+                </table>
+
+            </form>
+
+        </td>
+    </tr>
+</table>
+
+</center>
+
+</body>
+</html>

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.css"
+        integrity="sha512-qjes4kMRtfb2sdliSYNsNcJV92e+oZjG0ef8+GNJqFuqz5VtEt7KDIgNnmHca5BwCmLUZsIld50fTuofNCaDxQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+
+    <title>C Programming Projects</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+        rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff8f0;
+            color: #2b2118;
+        }
+
+
+        /* ================= HEADER ================= */
+
+        .hero {
+            background: linear-gradient(
+                135deg,
+                #5b2c83,
+                #c24d8a,
+                #f08a5d
+            );
+
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .hero-icon {
+            font-size: 52px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #fff1f5;
+        }
+
+
+        /* ================= PROJECT SECTION ================= */
+
+        .projects-section {
+            padding: 70px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #4b286d;
+        }
+
+        .section-title p {
+            color: #756b73;
+            margin-top: 10px;
+        }
+
+
+        /* ================= CARD ================= */
+
+        .project-card {
+            background: #ffffff;
+            border: 1px solid #f0dced;
+            border-radius: 22px;
+            padding: 32px 25px;
+            height: 100%;
+
+            box-shadow:
+                0 8px 25px rgba(91, 44, 131, 0.12);
+
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px) scale(1.01);
+
+            box-shadow:
+                0 16px 38px rgba(91, 44, 131, 0.20);
+        }
+
+
+        /* ================= ICON ================= */
+
+        .project-icon {
+            width: 75px;
+            height: 75px;
+
+            margin: 0 auto 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #f7eafa;
+            color: #9b3d91;
+
+            border-radius: 50%;
+            font-size: 32px;
+
+            transition: 0.3s;
+        }
+
+        .project-card:hover .project-icon {
+            background: #9b3d91;
+            color: white;
+        }
+
+
+        /* ================= CARD TEXT ================= */
+
+        .project-card h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #4b286d;
+        }
+
+        .project-card p {
+            color: #756b73;
+            line-height: 1.6;
+            min-height: 75px;
+        }
+
+
+        /* ================= BUTTON ================= */
+
+        .project-btn {
+            display: inline-block;
+            margin-top: 15px;
+
+            background: #4b286d;
+            color: white;
+
+            padding: 11px 22px;
+            border-radius: 10px;
+
+            text-decoration: none;
+            font-weight: 600;
+
+            transition: 0.3s;
+        }
+
+        .project-btn:hover {
+            background: #9b3d91;
+            color: white;
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #4b286d;
+            color: white;
+            text-align: center;
+
+            padding: 25px 15px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            color: #ead9e8;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 768px) {
+
+            .hero {
+                padding: 60px 20px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="hero-icon">
+                <i class="bi bi-code-slash"></i>
+            </div>
+
+            <h1>
+                C Programming Projects
+            </h1>
+
+            <p>
+                My C Programming Practice Programs
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section class="projects-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+                    My Projects
+                </h2>
+
+                <p>
+                    Select a category to view all programs
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <!-- ================= MULTI UTILITY ================= -->
+
+                <div class="col-lg-6 col-md-6">
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+                            <i class="bi bi-123"></i>
+                        </div>
+
+                        <h2>
+                            Multi-utility programs
+                        </h2>
+
+                        <h3>
+                            Project-1
+                        </h3>
+
+                        <a href="./1_project/mul.html"
+                            class="project-btn">
+
+                            Open Programs
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= GRADE CALCULATOR ================= -->
+
+                <div class="col-lg-6 col-md-6">
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <h2>
+                            Simple grade calculator
+                        </h2>
+
+                        <h3>
+                            Project-2
+                        </h3>
+
+                        <a href="./2_grade_calculater/grade.html"
+                            class="project-btn">
+
+                            Open Programs
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= LOOP ================= -->
+
+                <div class="col-lg-6 col-md-6">
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+                            <i class="bi bi-arrow-repeat"></i>
+                        </div>
+
+                        <h2>
+                            C Loop Programs
+                        </h2>
+
+                        <h3>
+                            Project-3
+                        </h3>
+
+                        <a href="./3_looper/looper.html"
+                            class="project-btn">
+
+                            Open Programs
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= PATTERN ================= -->
+
+                <div class="col-lg-6 col-md-6">
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+                            <i class="bi bi-stars"></i>
+                        </div>
+
+                        <h2>
+                            C Pattern Programs
+                        </h2>
+
+                        <h3>
+                            Project-4
+                        </h3>
+
+                        <a href="./4_pattern/pattern.html"
+                            class="project-btn">
+
+                            Open Programs
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= ARRAY ================= -->
+
+                <div class="col-lg-6 col-md-6">
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+                            <i class="bi bi-grid-3x3-gap"></i>
+                        </div>
+
+                        <h2>
+                            C Array Programs
+                        </h2>
+
+                        <h3>
+                            Project-5
+                        </h3>
+
+                        <a href="./5_array_assor/array.html"
+                            class="project-btn">
+
+                            Open Programs
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= STRING ================= -->
+
+                <div class="col-lg-6 col-md-6">
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+                            <i class="bi bi-123"></i>
+                        </div>
+
+                        <h2>
+                            String programs
+                        </h2>
+
+                        <h3>
+                            Project-6
+                        </h3>
+
+                        <a href="./6_filement/filement.html"
+                            class="project-btn">
+
+                            Open Programs
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= CALCULATOR ================= -->
+
+                <div class="col-lg-6 col-md-6">
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+                            <i class="bi bi-calculator"></i>
+                        </div>
+
+                        <h2>
+                            C Calculator Program
+                        </h2>
+
+                        <h3>
+                            Project-7
+                        </h3>
+
+                        <a href="./7_cal/cal.html"
+                            class="project-btn">
+
+                            Open Programs
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= INDICATOR ================= -->
+
+                <div class="col-lg-6 col-md-6">
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+                            <i class="fa-solid fa-gauge-high"></i>
+                        </div>
+
+                        <h2>
+                            C Indicator Program
+                        </h2>
+
+                        <h3>
+                            Project-8
+                        </h3>
+
+                        <a href="./8_indicatore/indicat.html"
+                            class="project-btn">
+
+                            Open Programs
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 C Programming Projects | GitHub Pages
+        </p>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

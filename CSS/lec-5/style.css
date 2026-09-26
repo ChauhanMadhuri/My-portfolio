@@ -1,0 +1,34 @@
+    body {
+            background-color:white;
+            font-family:Times New Roman;
+        }
+
+        .d1{
+            width:800px;
+            margin:20px auto;
+            border:5px solid black;
+            padding:20px;
+            text-align:center;
+        }
+
+        h1{
+            color:blueviolet;
+            font-size:40px;
+        }
+
+        h2{
+            color:#3d5f73;
+            font-style:italic;
+            margin-top:5px;
+        }
+
+        h3{
+            font-size:22px;
+            text-decoration:underline;
+            margin-top:25px;
+        }
+
+        p{
+            font-size:18px;
+            line-height:28px;
+        }

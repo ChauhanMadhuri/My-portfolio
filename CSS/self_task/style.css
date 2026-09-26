@@ -1,0 +1,301 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#fff;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+}
+.header{
+    padding:20px 0;
+}
+
+.header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo h2{
+    font-size:30px;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+}
+
+.navbar ul li{
+    margin-left:30px;
+}
+
+.navbar ul li a{
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+
+.signup{
+    background:black;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:5px;
+}
+.hero{
+    margin-top:30px;
+}
+
+.hero .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f3f3f3;
+    padding:50px;
+    border-radius:20px;
+}
+
+.left{
+    width:50%;
+}
+
+.left h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.left p{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.btn{
+    background:black;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.right{
+    width:45%;
+}
+
+.right img{
+    width:100%;
+}
+.brands{
+    width:100%;
+    background:#f5d547;
+    padding:30px;
+    text-align:center;
+}
+
+.brands img{
+    width:120px;
+    margin:10px 20px;
+}
+
+.sec-2{
+    width:90%;
+    margin:60px auto;
+}
+
+.sec-2 h2{
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+.main-card{
+    display:flex;
+    justify-content:space-between;
+}
+
+.card{
+    width:30%;
+}
+
+.card img{
+    width:100%;
+}
+
+.card h3{
+    margin-top:15px;
+}
+
+.card p{
+    color:gray;
+    margin-top:8px;
+}
+/* ================= Offer ================= */
+
+.offer{
+    width:100%;
+    background:#f4d84d;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:50px;
+}
+
+.offer-img{
+    width:45%;
+}
+
+.offer-img img{
+    width:100%;
+}
+
+.offer-text{
+    width:45%;
+}
+
+.offer-text h1{
+    font-size:55px;
+}
+
+.offer-text p{
+    margin:20px 0;
+    font-size:18px;
+}
+
+.offer-text h3{
+    margin-bottom:15px;
+}
+
+.offer-text button{
+    padding:12px 25px;
+    background:black;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+
+/* ================= Favourite ================= */
+
+.favourite{
+    width:90%;
+    margin:60px auto;
+}
+
+.favourite h2{
+    font-size:35px;
+    margin-bottom:30px;
+}
+
+.fav-main{
+    display:flex;
+    justify-content:space-between;
+}
+
+.fav-box{
+    width:48%;
+}
+
+.fav-box img{
+    width:100%;
+}
+
+.fav-box h3{
+    margin-top:15px;
+}
+
+.fav-box p{
+    margin-top:8px;
+    color:gray;
+}
+/* ==========================
+      NEWSLETTER
+========================== */
+
+.newsletter{
+    width:100%;
+    background:#f4d84d;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.newsletter h2{
+    font-size:35px;
+    margin-bottom:20px;
+}
+
+.newsletter p{
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+.email-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.email-box input{
+    width:350px;
+    padding:12px;
+    border:none;
+    outline:none;
+}
+
+.email-box button{
+    padding:12px 25px;
+    background:black;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+
+/* ==========================
+         FOOTER
+========================== */
+
+footer{
+    width:100%;
+    background:black;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    padding:60px 80px;
+}
+
+.footer-left{
+    width:35%;
+}
+
+.footer-left h2{
+    margin-bottom:20px;
+}
+
+.footer-left p{
+    line-height:25px;
+}
+
+.footer-right{
+    width:55%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.footer-right h3{
+    margin-bottom:20px;
+}
+
+.footer-right p{
+    margin-bottom:12px;
+    color:#ccc;
+    cursor:pointer;
+}
+
+.footer-right p:hover{
+    color:white;
+}

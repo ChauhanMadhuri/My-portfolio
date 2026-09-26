@@ -1,0 +1,24 @@
+
+*{
+    margin: 0px;
+}
+
+.header{
+    width: 100vw;
+    height: 40px; 
+    background: linear-gradient(to right, black, black, blue);
+    color: white;
+}
+.sec-2{
+    height: 900px;
+    width: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+img{
+    
+    width: 50%;
+    height: 900px;
+   
+}

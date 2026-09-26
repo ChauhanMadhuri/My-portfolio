@@ -1,0 +1,249 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.d1{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    background-color:khaki;
+}
+.main{
+    display: flex;
+    gap: 5px;
+    background-color: yellow;
+    width: 100%;
+    height: 50vh;
+}
+.header{
+    background-color:gray;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color:white
+}
+.p1{
+    text-align: left;
+}
+ul{
+    text-align: left;
+}
+
+.main1{
+    display: flex;
+    flex-wrap:nowrap;
+    gap: 5px;
+    background-color: yellow;
+    width: 100%;
+    height: 50vh;
+}
+.header1{
+    background-color:gray;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color:white
+}
+.main2{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 5px;
+    background-color: yellow;
+    width: 100%;
+    height: 50vh;
+}
+.header2{
+    background-color:gray;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color:white
+}
+
+.main3{
+    display: flex;
+    flex-wrap:wrap-reverse;
+     gap: 5px;
+    background-color: yellow;
+    width: 100%;
+    height: 50vh;
+}
+.header3{
+    background-color:gray;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color:white
+}
+
+.main4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    background-color: yellow;
+    width: 100%;
+    height: 50vh;
+}
+.header4{
+    background-color:gray;
+   width: 100%;
+    text-align: center;
+    padding: 10px;
+    color:white
+}
+
+.main5{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    gap: 5px;
+    background-color: yellow;
+    width: 100%;
+    height: 50vh;
+}
+.header5{
+    background-color:gray;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color:white
+}
+
+.main6{
+    display: flex;
+    flex-direction:row-reverse;
+    flex-wrap: wrap;
+    gap: 5px;
+    background-color: yellow;
+    width: 100%;
+    height: 50vh;
+}
+.header6{
+    background-color:gray;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color:white
+}
+
+.main7{
+    display: flex;
+    flex-direction:column-reverse;
+    flex-wrap: wrap;
+    gap: 5px;
+    background-color: yellow;
+    width: 100%;
+    height: 50vh;
+}
+.header7{
+    background-color:gray;
+   width: 100%;
+    text-align: center;
+    padding: 10px;
+    color:white
+}
+
+.main8{
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    gap: 5px;
+    background-color: yellow;
+    width: 100%;
+    height: 50vh;
+}
+.header8{
+    background-color:gray;
+   width: 100%;
+    text-align: center;
+    padding: 10px;
+    color:white
+}
+
+.main9{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    /* flex-wrap: wrap; */
+    gap: 5px;
+    background-color: yellow;
+    width: 100%;
+    height: 50vh;
+}
+.header9{
+    background-color:gray;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color:white
+}
+
+.main10{
+    display: flex;
+    flex-flow:nowrap;
+    /* flex-wrap: wrap; */
+    gap: 5px;
+    background-color: yellow;
+   width: 100%;
+    height: 50vh;
+}
+.header10{
+    background-color:gray;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color:white
+}
+
+.main11{
+    display: flex;
+    flex-flow:column;
+    flex-wrap: wrap; 
+    gap: 5px;
+    background-color: yellow;
+   width: 100%;
+    height: 50vh;
+}
+.header11{
+    background-color:gray;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color:white
+}
+
+.main12{
+    display: flex;
+    flex-flow:column-reverse;
+    flex-wrap: wrap; 
+    gap: 5px;
+    background-color: yellow;
+   width: 100%;
+    height: 50vh;
+}
+.header12{
+    background-color:gray;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color:white
+}
+
+.main13{
+    display: flex;
+    flex-flow:column;
+    flex-wrap:nowrap; 
+    gap: 5px;
+    background-color: yellow;
+   width: 100%;
+    height: 50vh;
+}
+.header13{
+    background-color:gray;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color:white
+}

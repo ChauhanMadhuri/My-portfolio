@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.p1{
+    background-color: lightgrey;
+    color: black;
+    height: 25px;
+    padding-left: 20px;
+    font-size:19px;
+    display: flex;
+    justify-content: space-between;
+}
+.pre_header{
+    color:lightgreen;
+    font-size: 60px;
+    font-weight: 100px;
+    padding: 20px;
+    display: flex;
+    
+}
+span{
+    color:black;
+}
+
+.search-box{
+    width:500px;
+    height:45px;
+    background:white;
+    border:1px solid #ddd;
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 15px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.search-box input{
+    border:none;
+    outline:none;
+    width:100%;
+    font-size:15px;
+}
+
+.search-box i{
+    color:#999;
+    height: 5px;
+    width: 5px;
+}
+.btn{
+    padding: 10px;
+    height: 48px;
+    gap: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    
+}
+div > .icon{
+    font-size: 30px;
+    color: black;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.bt-1{
+    padding: 20px;
+    width: 200px;
+    margin-left: 20px;
+    border-radius: 8px;
+    background-color: green;
+    color: white;
+
+}
+.header > a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: inline;
+    margin-left: 20px;
+}
+.img1{
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/034/494/532/small/flat-lay-vegetables-on-white-background-food-and-diet-concept-ai-generated-free-photo.jpg);
+    width: 100vh;
+    height: 100vh;
+    margin: 20px;
+    position: absolute;
+    background-repeat: no-repeat;
+
+}
+.hd1{
+    padding: 15px;
+}
+.p2{
+    padding:  0px 15px;
+}
+.btd{
+    background-color: black;
+    padding: 10px;
+    margin: 20px;
+    color: white;
+    font-size: 20px;
+    border-radius: 3px;
+}
+.s1{
+    color: lightgreen;
+}

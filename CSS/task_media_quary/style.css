@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: red;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+}
+.btn{
+    padding: 10px;
+    font-size: 15px;
+    background-color: red;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+    margin: 0px 0px 0px 90px;
+}
+nav{
+    background-color:rgb(237, 233, 233);
+    display: flex;
+}
+ul{
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    margin-left: 400px;
+    list-style:none ;
+    font-size: 19px;
+}
+nav img{
+    height: 70px;
+    width: 10%;
+    margin: 0px 0px 0px 40px;
+}
+hr{
+    color: red;
+}
+.icon {
+    color: black;
+}
+.sec-1{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: rgb(237, 233, 233);
+}
+.container{
+    display: flex;
+
+}
+.card{
+ border: 1px solid black;
+ width: 60px;
+ height: 70px;
+ padding: 50px;
+ margin: 30px;
+ background-color:rgb(194, 198, 202);
+}
+.card img{
+    width: 60px;
+}
+
+/* @media (min-width:768px){
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav img{
+        margin: 0;
+    }
+
+    ul{
+        margin: 20px 0 0 0;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+} */

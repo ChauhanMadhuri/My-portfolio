@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body class="bg-dark">
+    <div class="container-fluid">
+        <div class="container py-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h1 class="mb-0">
+                        <span class="text-white">&lt;M</span><span style="color:chocolate;">adhuri&gt;</span>
+                    </h1>
+                </div>
+                <div class="border border-dark rounded-pill
+                    d-none d-md-flex
+                    justify-content-center align-items-center gap-4 gap-lg-4
+                    bg-white p-3">
+
+                    <a href="%Home" class="text-decoration-none text-dark"> Home</a>  
+                    <a href="#about" class="text-decoration-none text-dark">About Us</a> 
+                    <a href="#skill" class="text-decoration-none text-dark"> Skill</a> 
+                    <a href="#project" class="text-decoration-none text-dark"> Project </a> 
+                    <!-- <a href="#contact" class="text-decoration-none text-dark"> Contact</a>   -->
+               </div>
+                <div class="d-none d-md-block">
+                    <button class="btn bg-white border-dark">
+                        Contact Me
+                    </button>
+                </div>
+                <button class="btn btn-dark d-md-none"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileMenu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+<!--ofcanvan responsiv mate-->
+    <div class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="mobileMenu">
+
+        <div class="offcanvas-header">
+
+            <h5 class="offcanvas-title">
+                <span>M</span><span style="color:chocolate;">adhuri</span>
+            </h5>
+
+            <button type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas">
+            </button>
+
+        </div>
+
+
+        <div class="offcanvas-body">
+
+            <div class="d-flex flex-column gap-3">
+
+                <a href="#"class="text-decoration-none text-dark fs-5" data-bs-dismiss="offcanvas">
+                    Home
+                </a>
+                <a href="#"class="text-decoration-none text-dark fs-5" data-bs-dismiss="offcanvas">
+                    Skill
+                </a>
+                <a href="#"class="text-decoration-none text-dark fs-5" data-bs-dismiss="offcanvas">
+                    Project
+                </a>
+                <a href="#"class="text-decoration-none text-dark fs-5" data-bs-dismiss="offcanvas">
+                    Contact
+                </a>
+                <button class="btn mt-3 text-white"
+                    style="background-color:chocolate;"
+                    data-bs-dismiss="offcanvas">
+                    Contact Me
+                </button>
+            </div>
+        </div>
+    </div>
+<!--sec 2 img mate-->
+    <div class="container">
+        <div class="text-center py-4 py-md-5">
+         <div class="d-inline-block border border-white border-4 rounded-circle p-2">
+                    <img src="img.png"
+                        alt="img 1"
+                        class="rounded-circle border border-warning border-5"
+                        style="height:250px; width:230px;">
+                </div>
+            <h1 class="mt-4"
+                style="color:chocolate;">
+                Madhuri Chauhan
+            </h1>
+            <p class="text-white fs-5">
+                BCA Student | Frontend Web Developer
+            </p>
+            <p class="text-white">
+              I am a BCA student and passionate Frontend Web Developer.
+              I love creating modern, responsive and user-friendly websites
+              using HTML, CSS, Bootstrap and JavaScript.
+            </p>
+        </div>
+    </div>
+
+    <!--about me sec -->
+    <div id="about" class="bg-white py-5">
+    <div class="container">
+        <div class="row">
+            <h1 class="fw-bold fs-1 text-center py-3" style="color: chocolate;">
+                <span class="text-dark">A</span>bout <span class="text-dark">M</span>e
+            </h1>
+            <!-- card ni side -->
+            <div class="col-12 col-md-6">
+                <div class="card mx-auto" style="max-width: 28rem;">
+                    <div class="card-body">
+                        <div class="text-center fs-1">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h5 class="card-title text-center h3">
+                            Full Stack Developer
+                        </h5>
+                        <p class="card-text text-center">
+                            I enjoy connecting with people, understanding
+                            their ideas, and creating beautiful, responsive,
+                            and user-friendly websites using modern web
+                            technologies. I am always excited to learn new
+                            skills, work on creative projects, and explore new
+                            opportunities in web development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- contact side in about me -->
+            <div class="col-12 col-md-6 mt-3">
+                <h3 style="color: chocolate;">
+                    I'm Madhuri, a passionate web developer.
+                </h3>
+                <p>
+                    I am currently pursuing my Bachelor of Computer
+                    Applications (BCA). I am learning web development
+                    and improving my frontend development skills.
+                </p>
+                <p>
+                    I have knowledge of HTML, CSS, Bootstrap, JavaScript,C language
+                    Git and GitHub. I enjoy creating responsive websites
+                    that work well on desktop, tablet and mobile devices.
+                </p>
+
+                <div class="row mt-4">
+                    <div class="col-12 col-md-6">
+                        <p>
+                            <strong  style="color: chocolate;">Name:</strong> Madhuri Chauhan
+                        </p>
+                        <p>
+                            <strong style="color: chocolate;">Degree:</strong> BCA
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <p>
+                            <strong style="color: chocolate;">Role:</strong>Frontend Developer
+                        </p>
+                        <p>
+                            <strong style="color: chocolate;">Email:</strong><br>
+                            chauhanmadhuri231
+                            
+                            @gmail.com
+                        </p>   
+                    </div>
+                </div>
+            </div>
+        </div>
+ </div>
+ <br><br><br>
+</div>
+</div>
+
+<!--sec 3 for my skill-->
+<div  id="skill" class="container">
+    <div class="row py-4 mt-3">
+
+    <h1 class="fw-bold fs-1 text-center py-3" style="color: chocolate;">
+        <span class="text-white">M</span>y <span class="text-white">S</span>kill
+    </h1>
+
+
+    <!-- HTML -->
+<div class="col-12 col-md-6 col-lg-3 mt-3">
+    <div class="card" style="width: 18rem;">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZL15nsuBYvAX1mMsnwam5a9VdWku1syW_ut2heMIjBMv0XlAL_UEB3rXl&s=10"
+             class="card-img-top"
+             style="height: 180px; object-fit: contain;"
+             alt="HTML">
+        <div class="card-body">
+            <!-- <p class="card-text">
+                I have good knowledge of HTML and can create well-structured
+                web pages using HTML elements, forms, tables, links, images,
+                and semantic tags.
+            </p> -->
+        </div>
+
+    </div>
+</div>
+
+<!-- CSS -->
+<div class="col-12 col-md-6 col-lg-3 mt-3">
+    <div class="card" style="width: 18rem;">
+
+        <img src="https://images.icon-icons.com/844/PNG/512/CSS3_icon-icons.com_67069.png"
+             class="card-img-top"
+             style="height: 180px; object-fit: contain;"
+             alt="CSS">
+        <div class="card-body">
+            <!-- <p class="card-text">
+                I have good knowledge of CSS and can design attractive,
+                responsive, and user-friendly web pages.
+            </p> -->
+        </div>
+    </div>
+</div>
+
+<!--boostrap-->
+<div class="col-12 col-md-6 col-lg-3 mt-3">
+    <div class="card" style="width: 18rem;">
+
+        <img src="https://icons.getbootstrap.com/assets/img/icons-hero.png"
+             class="card-img-top"
+             style="height: 180px; object-fit: contain;"
+             alt="HTML">
+        <div class="card-body">
+            <!-- <p class="card-text">
+                I have good knowledge of Bootstrap and can create 
+                responsive and user-friendly web pages using Bootstrap 
+                classes, grid system, cards, buttons, and responsive layouts.
+
+            </p> -->
+        </div>
+
+    </div>
+</div>
+<!--c_lang-->
+<div class="col-12 col-md-6 col-lg-3 mt-3">
+    <div class="card" style="width: 18rem;">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsqQMKf5YhNMp1tlbhGzZ9gdLupL_sJw91liCUU9g1Yg&s=10"
+             class="card-img-top"
+             style="height: 180px; object-fit: contain;"
+             alt="HTML">
+        <div class="card-body">
+            <!-- <p class="card-text">
+               I have good knowledge of C language and understand 
+               basic programming concepts such as variables, loops, 
+               arrays, functions, and conditional statements.
+
+            </p> -->
+        </div>
+
+    </div>
+</div>
+</div>
+</div>
+<!--sec my project mate-->
+<div  id="project" class="bg-white mt-3">
+ <div class="container ">
+    <div class="row">
+
+        <h1 class="fw-bold fs-1 text-center py-3" style="color: chocolate;">
+        <span class="text-dark">M</span>y <span class="text-dark">P</span>roject
+
+       </h1>
+       <!--html pro-->
+        <div class="col-12 col-md-6  col-lg-3 mt-3">
+            <div class="card h-100" style="width: 18rem;">
+            <img src="html.jpg" class="card-img-top" alt="html pro" style="height: 180px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">Html Project</h5>
+                <p class="card-text">Used to create the structure and content of my web projects using HTML elements..</p>
+                <a href="HTML/index.html"  target="_blank" class="btn  mt-auto" style="background-color:chocolate;">View Project..</a>
+            </div>
+            </div>
+
+        </div>
+
+        <!--css pro--> 
+        <div class="col-12 col-md-6  col-lg-3 mt-3">
+            <div class="card h-100" style="width: 18rem;">
+            <img src="css.jpg" class="card-img-top" alt="css pro" style="height: 180px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">CSS Project</h5>
+                <p class="card-text">Used to design and style my web projects..</p>
+                <a href="CSS/index_css.html" class="btn mt-auto"style="background-color:chocolate;">View Project..</a>
+            </div>
+            </div>
+        </div>
+<!--boostrap pro-->
+ <div class="col-12 col-md-6  col-lg-3 mt-3">
+            <div class="card h-100"style="width: 18rem;">
+            <img src="boost.jpg" class="card-img-top" alt="boost pro" style="height: 180px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">Boostrap Project</h5>
+                <p class="card-text">Used to create responsive and user-friendly web projects..</p>
+                <a href="#" class="btn  mt-auto" style="background-color:chocolate;">View Project..</a>
+            </div>
+            </div>
+
+        </div>
+<!--c lang pro-->
+ <div class="col-12 col-md-6  col-lg-3 mt-3">
+            <div class="card h-100"style="width: 18rem;">
+            <img src="c.jpg" class="card-img-top" alt="cs pro" style="height: 180px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">C_lang Project</h5>
+                <p class="card-text">Used to develop basic programming and logic-based projects..</p>
+                <a href="c_lang/index.html"target="_blank" class="btn  mt-auto" style="background-color:chocolate;">View Project..</a>
+            </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<br><br><br>
+</div>
+<!--sec for contact-->
+<div   id="contact" class="mt-5 bg-dark">
+    <div class="container">
+        <div class="row justify-content-center align-items-center py-4">
+
+            <!-- Left Side -->
+            <div class="col-12 col-md-6 text-center">
+
+                <div class="d-inline-block border border-white border-4 rounded-circle p-2">
+
+                    <img src="img.png"
+                        alt="img 1"
+                        class="rounded-circle border border-warning border-5"
+                        style="height:250px; width:230px;">
+
+                </div>
+
+                <h1 class="mt-3" style="color: chocolate;">
+                <span class="text-white">C</span>ontact <span class="text-white">M</span>e
+
+                </h1>
+
+                <!-- Social Icons -->
+                <div class="mt-3">
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/madhuri_chauhan_008/"
+                       target="_blank"
+                       class="btn btn-light rounded-circle me-2">
+                        <i class="fa-brands fa-instagram"
+                           style="color:#E1306C;"></i>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/madhuri-chauhan-a4aba03a7"
+                       target="_blank"
+                       class="btn btn-light rounded-circle me-2">
+                        <i class="fa-brands fa-linkedin"
+                           style="color:#0A66C2;"></i>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/ChauhanMadhuri"
+                       target="_blank"
+                       class="btn btn-light rounded-circle">
+                        <i class="fa-brands fa-github"
+                           style="color:#000;"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Right Side -->
+            <div class="col-12 col-md-6 mt-4 mt-md-0">
+
+                <form class="bg-light border rounded p-3"
+      onsubmit="sendWhatsApp(); return false;">
+
+                    <h3 style="color:chocolate;">
+                        Let's Stay Connected
+                    </h3>
+
+                    <div class="mb-3">
+                        Your Name
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Enter Your Name">
+                    </div>
+
+                    <div class="mb-3">
+                        Email ID
+                        <input type="email"
+                               class="form-control"
+                               placeholder="Enter your Email">
+                    </div>
+
+                    <div class="mb-3">
+                        Phone No
+                        <input type="tel"
+                               class="form-control"
+                               placeholder="Enter Your Phone No">
+                    </div>
+
+                    <div class="mb-3">
+                        Message
+                        <textarea class="form-control"
+                                  rows="3"
+                                  placeholder="Enter Your Message"></textarea>
+                    </div>
+
+                    <button type="submit"
+                            class="btn rounded" style="background-color: chocolate; color: white;">
+                        <!-- <i class="fa-solid fa-envelope"></i> -->
+                        Send 
+                    </button>
+                    <!-- <script>
+
+                function sendWhatsApp() {
+
+                    var name = document.getElementById("name").value;
+                    var email = document.getElementById("email").value;
+                    var phone = document.getElementById("phone").value;
+                    var message = document.getElementById("message").value;
+
+                    var whatsappMessage =
+                        "Hello Madhuri,%0A%0A" +
+                        "You have received a new message from your portfolio.%0A%0A" +
+                        "Name: " + name + "%0A" +
+                        "Email: " + email + "%0A" +
+                        "Phone: " + phone + "%0A%0A" +
+                        "Message:%0A" + message;
+
+                    var whatsappURL =
+                        "https://wa.me/7984881321?text=" + whatsappMessage;
+
+                    window.open(whatsappURL, "_blank");
+                }
+
+                </script> -->
+                                
+            </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

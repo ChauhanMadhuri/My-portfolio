@@ -1,0 +1,28 @@
+.header{
+   font-size: 20px; 
+   text-align: center;
+   background-color:azure;
+   
+   
+}
+.cnt{
+  width:250px;
+  height:auto;
+  padding:25px;
+  background:#ffffff7d;
+  border-radius:10px;
+  position:relative;
+  text-align:center;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+  border: 1px solid #242323;
+  margin: 30px;
+ display: inline-block;
+}
+.b1{
+    font-size: 20px;
+}
+.main{
+    background-color: azure;
+    border: 5px solid black;
+    text-align: center;
+}

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.css" 
+    integrity="sha512-qjes4kMRtfb2sdliSYNsNcJV92e+oZjG0ef8+GNJqFuqz5VtEt7KDIgNnmHca5BwCmLUZsIld50fTuofNCaDxQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <title>Grade caclulate Projects</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff9f3;
+            color: #222;
+        }
+
+
+        /* ================= HERO ================= */
+
+        .hero {
+            min-height: 395px;
+
+            background: linear-gradient(
+                120deg,
+                #803a91,
+                #c44683,
+                #f17b61
+            );
+
+            color: white;
+
+            text-align: center;
+
+            padding: 75px 20px 50px;
+        }
+
+        .code-icon {
+            font-size: 58px;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 22px;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+
+        /* ================= PROJECT SECTION ================= */
+
+        .projects {
+            padding: 75px 8%;
+            text-align: center;
+        }
+
+        .projects h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #43245f;
+        }
+
+        .projects > p {
+            color: #77677f;
+            font-size: 18px;
+            margin-bottom: 45px;
+        }
+
+
+        /* ================= CARDS ================= */
+
+        .cards {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 28px;
+        }
+
+        .card {
+            background: #ffffff;
+
+            border-radius: 18px;
+
+            padding: 38px 25px 30px;
+
+            border: 1px solid #f0d8ec;
+
+            box-shadow:
+                0 8px 25px rgba(128, 58, 145, 0.10);
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+
+            box-shadow:
+                0 12px 30px rgba(128, 58, 145, 0.18);
+        }
+
+
+        /* ================= ICON ================= */
+
+        .icon {
+            width: 80px;
+            height: 80px;
+
+            border-radius: 50%;
+
+            background: #f7e7fa;
+
+            color: #a33b91;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            margin: 0 auto 25px;
+
+            font-size: 27px;
+
+            font-weight: bold;
+        }
+
+
+        /* ================= CARD TEXT ================= */
+
+        .card h3 {
+            font-size: 27px;
+
+            margin-bottom: 12px;
+
+            color: #222;
+        }
+
+        .card p {
+            color: #77677f;
+
+            min-height: 48px;
+
+            margin-bottom: 25px;
+
+            font-size: 16px;
+
+            line-height: 1.5;
+        }
+
+
+        /* ================= BUTTON ================= */
+
+        .btn {
+            display: inline-block;
+
+            text-decoration: none;
+
+            background: linear-gradient(
+                90deg,
+                #813b91,
+                #c44986
+            );
+
+            color: white;
+
+            padding: 12px 25px;
+
+            border-radius: 8px;
+
+            font-size: 16px;
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: linear-gradient(
+                90deg,
+                #6d2f7d,
+                #a93670
+            );
+        }
+
+
+        /* ================= VIDEO CARD ================= */
+
+        .video-card {
+            margin-top: 28px;
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #43245f;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 22px;
+
+            font-size: 15px;
+        }
+
+
+        /* ================= TABLET ================= */
+
+        @media (max-width: 900px) {
+
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+        }
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 600px) {
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                min-height: 330px;
+
+                padding-top: 60px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .projects {
+                padding: 55px 6%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <section class="hero">
+
+        <div class="code-icon">
+            &lt;/&gt;
+        </div>
+
+        <h1>
+          Grade caclulate Projects
+        </h1>
+
+        <p>
+            My C Programming Practice Programs
+        </p>
+
+    </section>
+
+
+<div style="margin-top: 40px; text-align: left;">
+
+            <a href="../index.html" class="btn">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to Home
+            </a>
+
+</div>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section class="projects">
+
+        <h2>
+            My Projects
+        </h2>
+
+        <p>
+            Select a program to open the file
+        </p>
+
+
+        <div class="cards">
+
+
+            <!-- COUNT PROGRAM -->
+
+            <div class="card">
+
+                <div class="icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <h3>
+                    Grade Calculator
+                </h3>
+
+                <p>
+                    Program to calculate the grade based on marks.
+                </p>
+
+                <a href="1_GRADE.CPP"
+                   target="_blank"
+                   class="btn">
+
+                    Open Program
+
+                </a>
+
+            </div>
+
+
+
+            <!-- CHARACTER PROGRAM -->
+
+            <div class="card">
+
+                <div class="icon">
+                    🔢
+                </div>
+
+                <h3>
+                    Switch Case
+                </h3>
+
+                <p>
+                    Program to perform operations using switch case.
+                </p>
+
+                <a href="2_SWITCH.CPP"
+                   target="_blank"
+                   class="btn">
+
+                    Open Program
+
+                </a>
+
+            </div>
+
+
+
+            <!-- SUM PROGRAM -->
+
+            <div class="card">
+
+                <div class="icon">
+                    🔀
+                </div>
+
+                <h3>
+                    Conditional Statement
+                </h3>
+
+                <p>
+                    Program to check a condition using if-else statement.
+                </p>
+                <a href="3_if_else.cpp"
+                   target="_blank"
+                   class="btn">
+
+                    Open Program
+
+                </a>
+
+            </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        © 2026 C Programming Projects
+
+    </footer>
+
+
+</body>
+
+</html>

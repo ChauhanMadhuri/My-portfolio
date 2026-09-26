@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url("https://mrwallpaper.com/images/high/a-collection-of-horror-movie-posters-xtjhn92yx4u36s6r.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-bottom: #e50914 3px solid;
+}
+
+.im1{
+    position: absolute;
+    top: 20px;
+    left: 60px;
+}
+
+.im1 img{
+    width: 170px;
+}
+
+.btn{
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn1{
+    padding: 10px 18px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: 1px solid #777;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.signin{
+    padding: 10px 18px;
+    background: #e50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: rgb(249, 244, 244);
+}
+
+.content h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.content p{
+    margin-top: 15px;
+    font-size: 24px;
+}
+.email-box{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.email-box input{
+    width: 380px;
+    height: 58px;
+    padding: 0 18px;
+    font-size: 18px;
+    color: white;
+    background: rgba(22,22,22,0.7);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 5px;
+    outline: none;
+}
+
+.email-box input::placeholder{
+    color: #cfcfcf;
+}
+.trending{
+    width: 85%;
+    margin: 60px auto;
+    color: white;
+    background-color: black;
+}
+
+.trending h2{
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+/* UPDATED */
+.trend-box{
+    display: flex;
+    gap: 90px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior:auto;
+    padding-bottom: 15px;
+}
+
+/* Scrollbar */
+.trend-box::-webkit-scrollbar{
+    height: 80px;
+}
+
+.trend-box::-webkit-scrollbar-track{
+    background: #222;
+    border-radius: 10px;
+}
+
+.trend-box::-webkit-scrollbar-thumb{
+    background: #666;
+    border-radius: 10px;
+}
+
+.trend-box::-webkit-scrollbar-thumb:hover{
+    background: #999;
+}
+
+/* Firefox */
+.trend-box{
+    scrollbar-color: #666 #222;
+}
+
+.movie{
+    position: relative;
+    transition: .4s;
+    cursor: pointer;
+    flex-shrink: 0;
+    min-width: 180px;
+}
+.movie img{
+    width: 180px;
+    height: 260px;
+    border-radius: 12px;
+}
+
+.movie span{
+    position: absolute;
+    left: -20px;
+    bottom: -10px;
+    font-size: 90px;
+    font-weight: bold;
+    color: black;
+    -webkit-text-stroke:2px white;
+}
+
+.movie:hover{
+    transform: scale(1.08);
+}
+
+/* Button */
+
+.start-btn{
+    width:220px;
+    height:58px;
+    background:#e50914;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    font-size:24px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.start-btn:hover{
+    background:#c11119;
+}
+
+/* Reasons */
+
+.reasons{
+    width:85%;
+    margin:60px auto;
+    color:#fff;
+}
+
+.reasons h2{
+    font-size:28px;
+    margin-bottom:25px;
+}
+
+.reason-container{
+    display:flex;
+    gap:20px;
+}
+
+.reason-card{
+    flex:1;
+    background:linear-gradient(145deg,#192247,#210e17);
+    border-radius:15px;
+    padding:25px;
+    position:relative;
+    height:270px;
+}
+
+.reason-card h3{
+    font-size:24px;
+    margin-bottom:18px;
+}
+
+.reason-card p{
+    color:#cfcfcf;
+    line-height:28px;
+}
+
+.reason-card i{
+    position:absolute;
+    right:20px;
+    bottom:20px;
+    font-size:45px;
+    color:#ff2b7a;
+}
+
+/* FAQ */
+
+.faq{
+    width:85%;
+    margin:60px auto;
+    color:#fff;
+}
+
+.faq h2{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.faq-box{
+    background:#2d2d2d;
+    padding:28px;
+    margin-bottom:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.faq-box:hover{
+    background:#414141;
+}
+
+.faq-box span{
+    font-size:25px;
+}
+
+.faq-box i{
+    font-size:35px;
+}
+
+/* Bottom Email */
+
+.bottom-email{
+    width:85%;
+    margin:70px auto;
+    text-align:center;
+    color:#fff;
+}
+
+.bottom-email p{
+    margin-bottom:20px;
+    font-size:20px;
+}
+
+/* Footer */
+
+footer{
+    width:85%;
+    margin:70px auto;
+    color:#b3b3b3;
+}
+
+.question{
+    margin-bottom:35px;
+}
+
+.question a{
+    color:#b3b3b3;
+}
+
+.footer-links{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+    margin-bottom:35px;
+}
+
+.footer-links a{
+    color:#b3b3b3;
+    font-size:14px;
+}
+
+.copy{
+    margin-top:25px;
+    color:#777;
+}
