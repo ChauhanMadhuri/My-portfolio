@@ -5,9 +5,12 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.css" 
-    integrity="sha512-qjes4kMRtfb2sdliSYNsNcJV92e+oZjG0ef8+GNJqFuqz5VtEt7KDIgNnmHca5BwCmLUZsIld50fTuofNCaDxQ==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.css"
+        integrity="sha512-qjes4kMRtfb2sdliSYNsNcJV92e+oZjG0ef8+GNJqFuqz5VtEt7KDIgNnmHca5BwCmLUZsIld50fTuofNCaDxQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
 
     <title>Multi_utility Projects</title>
 
@@ -21,8 +24,8 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: #fff9f3;
-            color: #222;
+            background: #ffffff;
+            color: #222222;
         }
 
 
@@ -31,32 +34,32 @@
         .hero {
             min-height: 395px;
 
-            background: linear-gradient(
-                120deg,
-                #803a91,
-                #c44683,
-                #f17b61
-            );
+            background: #ffffff;
 
-            color: white;
+            color: #222222;
 
             text-align: center;
 
             padding: 75px 20px 50px;
+
+            border-bottom: 1px solid #dddddd;
         }
 
         .code-icon {
             font-size: 58px;
             margin-bottom: 25px;
+            color: #d2691e;
         }
 
         .hero h1 {
             font-size: 48px;
             margin-bottom: 22px;
+            color: #222222;
         }
 
         .hero p {
             font-size: 20px;
+            color: #555555;
         }
 
 
@@ -70,11 +73,11 @@
         .projects h2 {
             font-size: 36px;
             margin-bottom: 15px;
-            color: #43245f;
+            color: #222222;
         }
 
         .projects > p {
-            color: #77677f;
+            color: #666666;
             font-size: 18px;
             margin-bottom: 45px;
         }
@@ -93,14 +96,14 @@
         .card {
             background: #ffffff;
 
-            border-radius: 18px;
+            border-radius: 12px;
 
             padding: 38px 25px 30px;
 
-            border: 1px solid #f0d8ec;
+            border: 1px solid #dddddd;
 
             box-shadow:
-                0 8px 25px rgba(128, 58, 145, 0.10);
+                0 8px 25px rgba(0, 0, 0, 0.10);
 
             transition: 0.3s;
         }
@@ -108,8 +111,10 @@
         .card:hover {
             transform: translateY(-6px);
 
+            border-color: #d2691e;
+
             box-shadow:
-                0 12px 30px rgba(128, 58, 145, 0.18);
+                0 12px 30px rgba(210, 105, 30, 0.20);
         }
 
 
@@ -121,9 +126,9 @@
 
             border-radius: 50%;
 
-            background: #f7e7fa;
+            background: #fff3e8;
 
-            color: #a33b91;
+            color: #d2691e;
 
             display: flex;
 
@@ -136,6 +141,13 @@
             font-size: 27px;
 
             font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .card:hover .icon {
+            background: #d2691e;
+            color: #ffffff;
         }
 
 
@@ -146,11 +158,11 @@
 
             margin-bottom: 12px;
 
-            color: #222;
+            color: #222222;
         }
 
         .card p {
-            color: #77677f;
+            color: #666666;
 
             min-height: 48px;
 
@@ -169,17 +181,13 @@
 
             text-decoration: none;
 
-            background: linear-gradient(
-                90deg,
-                #813b91,
-                #c44986
-            );
+            background: #d2691e;
 
             color: white;
 
             padding: 12px 25px;
 
-            border-radius: 8px;
+            border-radius: 7px;
 
             font-size: 16px;
 
@@ -187,11 +195,7 @@
         }
 
         .btn:hover {
-            background: linear-gradient(
-                90deg,
-                #6d2f7d,
-                #a93670
-            );
+            background: #222222;
         }
 
 
@@ -205,7 +209,7 @@
         /* ================= FOOTER ================= */
 
         footer {
-            background: #43245f;
+            background: #222222;
 
             color: white;
 
@@ -214,6 +218,8 @@
             padding: 22px;
 
             font-size: 15px;
+
+            border-top: 4px solid #d2691e;
         }
 
 
@@ -273,7 +279,7 @@
         </div>
 
         <h1>
-          Calculator Project
+            Calculator Project
         </h1>
 
         <p>
@@ -283,14 +289,17 @@
     </section>
 
 
-<div style="margin-top: 40px; text-align: left;">
+    <div style="margin-top: 40px; text-align: left;">
 
-            <a href="../index.html" class="btn">
-                <i class="fa-solid fa-arrow-left"></i>
-                Back to Home
-            </a>
+        <a href="../index.html" class="btn">
 
-</div>
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Back to Home
+
+        </a>
+
+    </div>
 
 
     <!-- ================= PROJECTS ================= -->
@@ -309,16 +318,16 @@
         <div class="cards">
 
 
-            
-
             <div class="card">
 
                 <div class="icon">
-                   <i class="fa-solid fa-triangle-exclamation"></i>
+
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+
                 </div>
 
                 <h3>
-                    Calculator 
+                    Calculator
                 </h3>
 
                 <p>
@@ -361,20 +370,10 @@
                 </a>
 
             </div>
+
         </div>
 
     </section>
-
-
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        © 2026 C Programming Projects
-
-    </footer>
-
 
 </body>
 

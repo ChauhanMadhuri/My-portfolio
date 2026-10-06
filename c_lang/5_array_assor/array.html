@@ -8,6 +8,9 @@
 
     <title>Array Programming Projects</title>
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
 
         * {
@@ -18,7 +21,7 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: #fff9f3;
+            background: #ffffff;
             color: #222;
         }
 
@@ -28,32 +31,41 @@
         .hero {
             min-height: 395px;
 
-            background: linear-gradient(
-                120deg,
-                #803a91,
-                #c44683,
-                #f17b61
-            );
+            background: #ffffff;
 
-            color: white;
+            color: #222;
 
             text-align: center;
 
             padding: 75px 20px 50px;
+
+            border-bottom: 1px solid #eeeeee;
         }
 
         .code-icon {
             font-size: 58px;
+
             margin-bottom: 25px;
+
+            color: #d86b18;
         }
 
         .hero h1 {
             font-size: 48px;
+
             margin-bottom: 22px;
+
+            font-weight: 700;
+        }
+
+        .hero h1::first-letter {
+            color: #222;
         }
 
         .hero p {
             font-size: 20px;
+
+            color: #666;
         }
 
 
@@ -61,18 +73,25 @@
 
         .projects {
             padding: 75px 8%;
+
             text-align: center;
         }
 
         .projects h2 {
             font-size: 36px;
+
             margin-bottom: 15px;
-            color: #43245f;
+
+            color: #222;
+
+            font-weight: 700;
         }
 
         .projects > p {
-            color: #77677f;
+            color: #777;
+
             font-size: 18px;
+
             margin-bottom: 45px;
         }
 
@@ -90,14 +109,13 @@
         .card {
             background: #ffffff;
 
-            border-radius: 18px;
+            border-radius: 10px;
 
-            padding: 38px 25px 30px;
+            padding: 32px 25px 28px;
 
-            border: 1px solid #f0d8ec;
+            border: 1px solid #dddddd;
 
-            box-shadow:
-                0 8px 25px rgba(128, 58, 145, 0.10);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 
             transition: 0.3s;
         }
@@ -105,22 +123,24 @@
         .card:hover {
             transform: translateY(-6px);
 
-            box-shadow:
-                0 12px 30px rgba(128, 58, 145, 0.18);
+            border-color: #d86b18;
+
+            box-shadow: 0 10px 25px rgba(216, 107, 24, 0.18);
         }
 
 
         /* ================= ICON ================= */
 
         .icon {
-            width: 80px;
-            height: 80px;
+            width: 70px;
+
+            height: 70px;
 
             border-radius: 50%;
 
-            background: #f7e7fa;
+            background: #fff3e8;
 
-            color: #a33b91;
+            color: #d86b18;
 
             display: flex;
 
@@ -130,7 +150,7 @@
 
             margin: 0 auto 25px;
 
-            font-size: 25px;
+            font-size: 23px;
 
             font-weight: bold;
         }
@@ -139,15 +159,17 @@
         /* ================= CARD TEXT ================= */
 
         .card h3 {
-            font-size: 27px;
+            font-size: 25px;
 
             margin-bottom: 12px;
 
             color: #222;
+
+            font-weight: 700;
         }
 
         .card p {
-            color: #77677f;
+            color: #777;
 
             min-height: 48px;
 
@@ -161,41 +183,46 @@
 
         /* ================= BUTTON ================= */
 
-        .btn {
+        .btn-custom {
             display: inline-block;
 
             text-decoration: none;
 
-            background: linear-gradient(
-                90deg,
-                #813b91,
-                #c44986
-            );
+            background: #d86b18;
 
             color: white;
 
-            padding: 12px 25px;
+            padding: 11px 23px;
 
-            border-radius: 8px;
+            border-radius: 6px;
 
             font-size: 16px;
 
             transition: 0.3s;
+
+            border: none;
         }
 
-        .btn:hover {
-            background: linear-gradient(
-                90deg,
-                #6d2f7d,
-                #a93670
-            );
+        .btn-custom:hover {
+            background: #b9570e;
+
+            color: white;
+        }
+
+
+        /* ================= BACK BUTTON ================= */
+
+        .back-area {
+            margin-top: 35px;
+
+            margin-left: 8%;
         }
 
 
         /* ================= FOOTER ================= */
 
         footer {
-            background: #43245f;
+            background: #222;
 
             color: white;
 
@@ -204,6 +231,12 @@
             padding: 22px;
 
             font-size: 15px;
+
+            margin-top: 20px;
+        }
+
+        footer span {
+            color: #d86b18;
         }
 
 
@@ -244,6 +277,10 @@
                 padding: 55px 6%;
             }
 
+            .back-area {
+                margin-left: 6%;
+            }
+
         }
 
     </style>
@@ -273,15 +310,20 @@
     </section>
 
 
+    <!-- ================= BACK BUTTON ================= -->
 
-<div style="margin-top: 40px; text-align: left;">
+    <div class="back-area">
 
-            <a href="../index.html" class="btn">
-                <i class="fa-solid fa-arrow-left"></i>
-                Back to Home
-            </a>
+        <a href="../index.html" class="btn-custom">
 
-</div>
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Back to Home
+
+        </a>
+
+    </div>
+
 
     <!-- ================= PROJECTS ================= -->
 
@@ -317,14 +359,13 @@
 
                 <a href="1.CPP"
                    target="_blank"
-                   class="btn">
+                   class="btn-custom">
 
                     Open Program
 
                 </a>
 
             </div>
-
 
 
             <!-- 2 -->
@@ -345,14 +386,13 @@
 
                 <a href="2.CPP"
                    target="_blank"
-                   class="btn">
+                   class="btn-custom">
 
                     Open Program
 
                 </a>
 
             </div>
-
 
 
             <!-- 3 -->
@@ -373,14 +413,13 @@
 
                 <a href="3.CPP"
                    target="_blank"
-                   class="btn">
+                   class="btn-custom">
 
                     Open Program
 
                 </a>
 
             </div>
-
 
 
             <!-- 4 -->
@@ -401,14 +440,13 @@
 
                 <a href="4.cpp"
                    target="_blank"
-                   class="btn">
+                   class="btn-custom">
 
                     Open Program
 
                 </a>
 
             </div>
-
 
 
             <!-- VIDEO -->
@@ -429,7 +467,7 @@
 
                 <a href="array.webm"
                    target="_blank"
-                   class="btn">
+                   class="btn-custom">
 
                     Watch Video
 
@@ -443,15 +481,9 @@
     </section>
 
 
+    <!-- Bootstrap JS -->
 
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        © 2026 Array Programming Projects
-
-    </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

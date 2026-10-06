@@ -18,8 +18,8 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: #fff9f3;
-            color: #222;
+            background: #ffffff;
+            color: #222222;
         }
 
 
@@ -28,32 +28,72 @@
         .hero {
             min-height: 395px;
 
-            background: linear-gradient(
-                120deg,
-                #803a91,
-                #c44683,
-                #f17b61
-            );
+            background: #ffffff;
 
-            color: white;
+            color: #222222;
 
             text-align: center;
 
             padding: 75px 20px 50px;
+
+            border-bottom: 1px solid #eeeeee;
         }
 
         .code-icon {
             font-size: 58px;
+
             margin-bottom: 25px;
+
+            color: #d2691e;
         }
 
         .hero h1 {
             font-size: 48px;
+
             margin-bottom: 22px;
+
+            color: #222222;
+
+            font-weight: 700;
         }
 
         .hero p {
             font-size: 20px;
+
+            color: #777777;
+        }
+
+
+        /* ================= BACK BUTTON ================= */
+
+        .back-section {
+            margin-top: 35px;
+
+            margin-left: 8%;
+        }
+
+        .back-btn {
+            display: inline-block;
+
+            text-decoration: none;
+
+            background: #d2691e;
+
+            color: white;
+
+            padding: 11px 22px;
+
+            border-radius: 7px;
+
+            font-size: 16px;
+
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #222222;
+
+            color: white;
         }
 
 
@@ -61,18 +101,29 @@
 
         .projects {
             padding: 75px 8%;
+
             text-align: center;
         }
 
         .projects h2 {
             font-size: 36px;
+
             margin-bottom: 15px;
-            color: #43245f;
+
+            color: #222222;
+
+            font-weight: 700;
+        }
+
+        .projects h2 span {
+            color: #d2691e;
         }
 
         .projects > p {
-            color: #77677f;
+            color: #777777;
+
             font-size: 18px;
+
             margin-bottom: 45px;
         }
 
@@ -90,14 +141,14 @@
         .card {
             background: #ffffff;
 
-            border-radius: 18px;
+            border-radius: 10px;
 
-            padding: 38px 25px 30px;
+            padding: 32px 25px 30px;
 
-            border: 1px solid #f0d8ec;
+            border: 1px solid #dddddd;
 
             box-shadow:
-                0 8px 25px rgba(128, 58, 145, 0.10);
+                0 5px 15px rgba(0, 0, 0, 0.08);
 
             transition: 0.3s;
         }
@@ -105,8 +156,10 @@
         .card:hover {
             transform: translateY(-6px);
 
+            border-color: #d2691e;
+
             box-shadow:
-                0 12px 30px rgba(128, 58, 145, 0.18);
+                0 10px 25px rgba(210, 105, 30, 0.18);
         }
 
 
@@ -114,13 +167,14 @@
 
         .icon {
             width: 80px;
+
             height: 80px;
 
             border-radius: 50%;
 
-            background: #f7e7fa;
+            background: #fff3e8;
 
-            color: #a33b91;
+            color: #d2691e;
 
             display: flex;
 
@@ -133,6 +187,14 @@
             font-size: 25px;
 
             font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .card:hover .icon {
+            background: #d2691e;
+
+            color: white;
         }
 
 
@@ -143,11 +205,13 @@
 
             margin-bottom: 12px;
 
-            color: #222;
+            color: #222222;
+
+            font-weight: 700;
         }
 
         .card p {
-            color: #77677f;
+            color: #777777;
 
             min-height: 48px;
 
@@ -166,17 +230,13 @@
 
             text-decoration: none;
 
-            background: linear-gradient(
-                90deg,
-                #813b91,
-                #c44986
-            );
+            background: #d2691e;
 
             color: white;
 
             padding: 12px 25px;
 
-            border-radius: 8px;
+            border-radius: 7px;
 
             font-size: 16px;
 
@@ -184,18 +244,16 @@
         }
 
         .btn:hover {
-            background: linear-gradient(
-                90deg,
-                #6d2f7d,
-                #a93670
-            );
+            background: #222222;
+
+            color: white;
         }
 
 
         /* ================= FOOTER ================= */
 
         footer {
-            background: #43245f;
+            background: #222222;
 
             color: white;
 
@@ -204,6 +262,10 @@
             padding: 22px;
 
             font-size: 15px;
+        }
+
+        footer span {
+            color: #d2691e;
         }
 
 
@@ -244,6 +306,10 @@
                 padding: 55px 6%;
             }
 
+            .back-section {
+                margin-left: 6%;
+            }
+
         }
 
     </style>
@@ -273,14 +339,19 @@
     </section>
 
 
-<div style="margin-top: 40px; text-align: left;">
+    <!-- ================= BACK BUTTON ================= -->
 
-            <a href="../index.html" class="btn">
-                <i class="fa-solid fa-arrow-left"></i>
-                Back to Home
-            </a>
+    <div class="back-section">
 
-</div>
+        <a href="../index.html" class="back-btn">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Back to Home
+
+        </a>
+
+    </div>
 
 
     <!-- ================= PROJECTS ================= -->
@@ -288,7 +359,7 @@
     <section class="projects">
 
         <h2>
-            My Projects
+            My <span>Projects</span>
         </h2>
 
         <p>
@@ -326,7 +397,6 @@
             </div>
 
 
-
             <!-- 2 -->
 
             <div class="card">
@@ -352,7 +422,6 @@
                 </a>
 
             </div>
-
 
 
             <!-- VIDEO -->
@@ -387,14 +456,8 @@
     </section>
 
 
-
     <!-- ================= FOOTER ================= -->
 
-    <footer>
-
-        © 2026 C Programming Projects
-
-    </footer>
 
 
 </body>

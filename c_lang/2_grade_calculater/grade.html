@@ -5,11 +5,19 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.css" 
-    integrity="sha512-qjes4kMRtfb2sdliSYNsNcJV92e+oZjG0ef8+GNJqFuqz5VtEt7KDIgNnmHca5BwCmLUZsIld50fTuofNCaDxQ==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer">
 
-    <title>Grade caclulate Projects</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.css"
+        integrity="sha512-qjes4kMRtfb2sdliSYNsNcJV92e+oZjG0ef8+GNJqFuqz5VtEt7KDIgNnmHca5BwCmLUZsIld50fTuofNCaDxQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <title>Grade Calculate Projects</title>
 
     <style>
 
@@ -21,62 +29,95 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: #fff9f3;
-            color: #222;
+            background: #ffffff;
+            color: #222222;
         }
 
 
         /* ================= HERO ================= */
 
         .hero {
-            min-height: 395px;
-
-            background: linear-gradient(
-                120deg,
-                #803a91,
-                #c44683,
-                #f17b61
-            );
-
-            color: white;
+            background: #ffffff;
+            color: #222222;
 
             text-align: center;
 
-            padding: 75px 20px 50px;
+            padding: 55px 20px 45px;
+
+            border-bottom: 1px solid #eeeeee;
         }
 
         .code-icon {
-            font-size: 58px;
-            margin-bottom: 25px;
+            font-size: 55px;
+            margin-bottom: 15px;
+            color: #d2691e;
         }
 
         .hero h1 {
-            font-size: 48px;
-            margin-bottom: 22px;
+            font-size: 44px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #222222;
+        }
+
+        .hero h1 span {
+            color: #d2691e;
         }
 
         .hero p {
-            font-size: 20px;
+            font-size: 18px;
+            color: #777777;
+        }
+
+
+        /* ================= BACK BUTTON ================= */
+
+        .back-section {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .back-btn {
+            display: inline-block;
+
+            text-decoration: none;
+
+            background: #222222;
+            color: white;
+
+            padding: 10px 20px;
+
+            border-radius: 7px;
+
+            font-size: 15px;
+
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #d2691e;
+            color: white;
         }
 
 
         /* ================= PROJECT SECTION ================= */
 
         .projects {
-            padding: 75px 8%;
+            padding: 55px 8% 70px;
             text-align: center;
         }
 
         .projects h2 {
-            font-size: 36px;
-            margin-bottom: 15px;
-            color: #43245f;
+            font-size: 34px;
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: #222222;
         }
 
         .projects > p {
-            color: #77677f;
-            font-size: 18px;
-            margin-bottom: 45px;
+            color: #777777;
+            font-size: 17px;
+            margin-bottom: 40px;
         }
 
 
@@ -88,19 +129,21 @@
             grid-template-columns: repeat(3, 1fr);
 
             gap: 28px;
+
+            margin-top: 10px;
         }
 
         .card {
             background: #ffffff;
 
-            border-radius: 18px;
+            border-radius: 10px;
 
-            padding: 38px 25px 30px;
+            padding: 30px 22px 25px;
 
-            border: 1px solid #f0d8ec;
+            border: 1px solid #dddddd;
 
             box-shadow:
-                0 8px 25px rgba(128, 58, 145, 0.10);
+                0 3px 10px rgba(0, 0, 0, 0.08);
 
             transition: 0.3s;
         }
@@ -108,22 +151,24 @@
         .card:hover {
             transform: translateY(-6px);
 
+            border-color: #d2691e;
+
             box-shadow:
-                0 12px 30px rgba(128, 58, 145, 0.18);
+                0 10px 22px rgba(0, 0, 0, 0.14);
         }
 
 
         /* ================= ICON ================= */
 
         .icon {
-            width: 80px;
-            height: 80px;
+            width: 70px;
+            height: 70px;
 
-            border-radius: 50%;
+            border-radius: 8px;
 
-            background: #f7e7fa;
+            background: #fff3e8;
 
-            color: #a33b91;
+            color: #d2691e;
 
             display: flex;
 
@@ -131,30 +176,39 @@
 
             justify-content: center;
 
-            margin: 0 auto 25px;
+            margin: 0 auto 20px;
 
-            font-size: 27px;
+            font-size: 28px;
 
             font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .card:hover .icon {
+            background: #d2691e;
+            color: #ffffff;
         }
 
 
         /* ================= CARD TEXT ================= */
 
         .card h3 {
-            font-size: 27px;
+            font-size: 23px;
 
             margin-bottom: 12px;
 
-            color: #222;
+            color: #222222;
+
+            font-weight: 700;
         }
 
         .card p {
-            color: #77677f;
+            color: #777777;
 
             min-height: 48px;
 
-            margin-bottom: 25px;
+            margin-bottom: 22px;
 
             font-size: 16px;
 
@@ -164,48 +218,36 @@
 
         /* ================= BUTTON ================= */
 
-        .btn {
+        .btn-project {
             display: inline-block;
 
             text-decoration: none;
 
-            background: linear-gradient(
-                90deg,
-                #813b91,
-                #c44986
-            );
+            background: #d2691e;
 
             color: white;
 
-            padding: 12px 25px;
+            padding: 10px 20px;
 
-            border-radius: 8px;
+            border-radius: 7px;
 
-            font-size: 16px;
+            font-size: 15px;
+
+            font-weight: 600;
 
             transition: 0.3s;
         }
 
-        .btn:hover {
-            background: linear-gradient(
-                90deg,
-                #6d2f7d,
-                #a93670
-            );
-        }
-
-
-        /* ================= VIDEO CARD ================= */
-
-        .video-card {
-            margin-top: 28px;
+        .btn-project:hover {
+            background: #222222;
+            color: white;
         }
 
 
         /* ================= FOOTER ================= */
 
         footer {
-            background: #43245f;
+            background: #222222;
 
             color: white;
 
@@ -226,7 +268,7 @@
             }
 
             .hero h1 {
-                font-size: 40px;
+                font-size: 38px;
             }
 
         }
@@ -241,17 +283,19 @@
             }
 
             .hero {
-                min-height: 330px;
-
-                padding-top: 60px;
+                padding: 45px 20px 35px;
             }
 
             .hero h1 {
-                font-size: 32px;
+                font-size: 30px;
+            }
+
+            .hero p {
+                font-size: 16px;
             }
 
             .projects {
-                padding: 55px 6%;
+                padding: 45px 6%;
             }
 
         }
@@ -273,7 +317,7 @@
         </div>
 
         <h1>
-          Grade caclulate Projects
+            Grade Calculate <span>Projects</span>
         </h1>
 
         <p>
@@ -283,14 +327,23 @@
     </section>
 
 
-<div style="margin-top: 40px; text-align: left;">
+    <!-- ================= BACK BUTTON ================= -->
 
-            <a href="../index.html" class="btn">
+    <div class="container">
+
+        <div class="back-section">
+
+            <a href="../index.html" class="back-btn">
+
                 <i class="fa-solid fa-arrow-left"></i>
+
                 Back to Home
+
             </a>
 
-</div>
+        </div>
+
+    </div>
 
 
     <!-- ================= PROJECTS ================= -->
@@ -309,7 +362,7 @@
         <div class="cards">
 
 
-            <!-- COUNT PROGRAM -->
+            <!-- GRADE CALCULATOR -->
 
             <div class="card">
 
@@ -327,7 +380,7 @@
 
                 <a href="1_GRADE.CPP"
                    target="_blank"
-                   class="btn">
+                   class="btn-project">
 
                     Open Program
 
@@ -336,8 +389,7 @@
             </div>
 
 
-
-            <!-- CHARACTER PROGRAM -->
+            <!-- SWITCH CASE -->
 
             <div class="card">
 
@@ -355,7 +407,7 @@
 
                 <a href="2_SWITCH.CPP"
                    target="_blank"
-                   class="btn">
+                   class="btn-project">
 
                     Open Program
 
@@ -364,8 +416,7 @@
             </div>
 
 
-
-            <!-- SUM PROGRAM -->
+            <!-- CONDITIONAL STATEMENT -->
 
             <div class="card">
 
@@ -380,9 +431,10 @@
                 <p>
                     Program to check a condition using if-else statement.
                 </p>
+
                 <a href="3_if_else.cpp"
                    target="_blank"
-                   class="btn">
+                   class="btn-project">
 
                     Open Program
 
@@ -390,18 +442,14 @@
 
             </div>
 
+
+        </div>
+
     </section>
 
+    <!-- Bootstrap JS -->
 
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        © 2026 C Programming Projects
-
-    </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
