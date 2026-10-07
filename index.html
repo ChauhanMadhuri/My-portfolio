@@ -886,36 +886,55 @@
                         Send Me a <span class="text-orange">Message</span>
                     </h3>
 
-                    <form id="contactForm">
+                    <form id="contactForm"
+                          action="https://formspree.io/f/YOUR_FORM_ID"
+                          method="POST">
 
                         <div class="row g-3">
 
                             <div class="col-12 col-md-6">
                                 <label class="form-label fw-semibold">Your Name</label>
-                                <input type="text" id="name" class="form-control"
-                                    placeholder="Enter Your Name" required>
+                                <input type="text"
+                                       name="name"
+                                       id="name"
+                                       class="form-control"
+                                       placeholder="Enter Your Name"
+                                       required>
                             </div>
 
                             <div class="col-12 col-md-6">
                                 <label class="form-label fw-semibold">Email ID</label>
-                                <input type="email" id="email" class="form-control"
-                                    placeholder="Enter Your Email" required>
+                                <input type="email"
+                                       name="email"
+                                       id="email"
+                                       class="form-control"
+                                       placeholder="Enter Your Email"
+                                       required>
                             </div>
 
                             <div class="col-12">
                                 <label class="form-label fw-semibold">Phone No</label>
-                                <input type="tel" id="phone" class="form-control"
-                                    placeholder="Enter Your Phone No" required>
+                                <input type="tel"
+                                       name="phone"
+                                       id="phone"
+                                       class="form-control"
+                                       placeholder="Enter Your Phone No"
+                                       required>
                             </div>
 
                             <div class="col-12">
                                 <label class="form-label fw-semibold">Message</label>
-                                <textarea id="message" class="form-control" rows="5"
-                                    placeholder="Enter Your Message" required></textarea>
+                                <textarea name="message"
+                                          id="message"
+                                          class="form-control"
+                                          rows="5"
+                                          placeholder="Enter Your Message"
+                                          required></textarea>
                             </div>
 
                             <div class="col-12">
-                                <button type="submit" class="btn btn-orange rounded-pill px-4">
+                                <button type="submit"
+                                        class="btn btn-orange rounded-pill px-4">
                                     Send Message
                                     <i class="fa-solid fa-envelope-circle-check text-light"></i>
                                 </button>
@@ -940,17 +959,20 @@
         <div class="mb-3">
 
             <a href="https://www.instagram.com/madhuri_chauhan_008/"
-               target="_blank" class="text-decoration-none fs-5 mx-2">
+               target="_blank"
+               class="text-decoration-none fs-5 mx-2">
                 <i class="fa-brands fa-instagram"></i>
             </a>
 
             <a href="https://www.linkedin.com/in/madhuri-chauhan-a4aba03a7"
-               target="_blank" class="text-decoration-none fs-5 mx-2">
+               target="_blank"
+               class="text-decoration-none fs-5 mx-2">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
 
             <a href="https://github.com/ChauhanMadhuri"
-               target="_blank" class="text-decoration-none fs-5 mx-2">
+               target="_blank"
+               class="text-decoration-none fs-5 mx-2">
                 <i class="fa-brands fa-github"></i>
             </a>
 
@@ -966,38 +988,6 @@
         </small>
 
     </div>
-</footer>
-
-<!-- mail FORM -->
-<script>
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    let name = document.getElementById("name").value.trim();
-    let email = document.getElementById("email").value.trim();
-    let phone = document.getElementById("phone").value.trim();
-    let message = document.getElementById("message").value.trim();
-
-    let subject = "New Portfolio Contact - " + name;
-
-    let body =
-        "Hello Madhuri,\n\n" +
-        "New Portfolio Contact\n\n" +
-        "Name: " + name + "\n" +
-        "Email: " + email + "\n" +
-        "Phone: " + phone + "\n\n" +
-        "Message:\n" + message + "\n\n" +
-        "Thank you.";
-
-    let mailtoLink =
-        "mailto:chauhanmadhuri231@gmail.com" +
-        "?subject=" + encodeURIComponent(subject) +
-        "&body=" + encodeURIComponent(body);
-
-    window.location.href = mailtoLink;
-});
-</script>
-
-
+</footer>   
 </body>
 </html>
