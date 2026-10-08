@@ -802,8 +802,6 @@
         </div>
     </div>
 </section>
-
-<!-- CONTACT -->
 <section id="contact" class="contact-section py-5">
     <div class="container">
 
@@ -874,7 +872,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <!-- Contact Form -->
@@ -886,49 +883,71 @@
                         Send Me a <span class="text-orange">Message</span>
                     </h3>
 
-                    <form id="contactForm">
+                <form id="contactForm"
+                        action="https://api.web3forms.com/submit"
+                        method="POST">>
+                        <input type="hidden"
+                            name="access_key"
+                            value="19e29ba5-bf6b-412d-a377-c0d187fc10cc">
 
                         <div class="row g-3">
-
                             <div class="col-12 col-md-6">
-                                <label class="form-label fw-semibold">Your Name</label>
-                                <input type="text" id="name" class="form-control"
-                                    placeholder="Enter Your Name" required>
+                                <label class="form-label fw-semibold">
+                                    Your Name
+                                </label>
+                                <input type="text"
+                                    id="name"
+                                    name="name"
+                                    class="form-control"
+                                    placeholder="Enter Your Name"
+                                    required>
                             </div>
-
                             <div class="col-12 col-md-6">
-                                <label class="form-label fw-semibold">Email ID</label>
-                                <input type="email" id="email" class="form-control"
-                                    placeholder="Enter Your Email" required>
-                            </div>
+                                <label class="form-label fw-semibold">
+                                    Email ID
+                                </label>
 
-                            <div class="col-12">
-                                <label class="form-label fw-semibold">Phone No</label>
-                                <input type="tel" id="phone" class="form-control"
-                                    placeholder="Enter Your Phone No" required>
+                                <input type="email"
+                                    id="email"
+                                    name="email"
+                                    class="form-control"
+                                    placeholder="Enter Your Email"
+                                    required>
                             </div>
-
                             <div class="col-12">
-                                <label class="form-label fw-semibold">Message</label>
-                                <textarea id="message" class="form-control" rows="5"
-                                    placeholder="Enter Your Message" required></textarea>
+                                <label class="form-label fw-semibold">
+                                    Phone No
+                                </label>
+
+                                <input type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    class="form-control"
+                                    placeholder="Enter Your Phone No"
+                                    required>
                             </div>
-
                             <div class="col-12">
-                                <button type="submit" class="btn btn-orange rounded-pill px-4">
+                                <label class="form-label fw-semibold">
+                                    Message
+                                </label>
+                                <textarea id="message"
+                                        name="message"
+                                        class="form-control"
+                                        rows="5"
+                                        placeholder="Enter Your Message"
+                                        required></textarea>
+                            </div>
+                            <!-- Button -->
+                            <div class="col-12">
+                                <button type="submit"class="btn btn-orange rounded-pill px-4">
                                     Send Message
                                     <i class="fa-solid fa-envelope-circle-check text-light"></i>
                                 </button>
                             </div>
-
                         </div>
-
                     </form>
-
                 </div>
-
             </div>
-
         </div>
     </div>
 </section>
@@ -967,37 +986,5 @@
 
     </div>
 </footer>
-
-<!-- mail FORM -->
-<script>
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    let name = document.getElementById("name").value.trim();
-    let email = document.getElementById("email").value.trim();
-    let phone = document.getElementById("phone").value.trim();
-    let message = document.getElementById("message").value.trim();
-
-    let subject = "New Portfolio Contact - " + name;
-
-    let body =
-        "Hello Madhuri,\n\n" +
-        "New Portfolio Contact\n\n" +
-        "Name: " + name + "\n" +
-        "Email: " + email + "\n" +
-        "Phone: " + phone + "\n\n" +
-        "Message:\n" + message + "\n\n" +
-        "Thank you.";
-
-    let mailtoLink =
-        "mailto:chauhanmadhuri231@gmail.com" +
-        "?subject=" + encodeURIComponent(subject) +
-        "&body=" + encodeURIComponent(body);
-
-    window.location.href = mailtoLink;
-});
-</script>
-
-
 </body>
 </html>
