@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.css"
+        integrity="sha512-qjes4kMRtfb2sdliSYNsNcJV92e+oZjG0ef8+GNJqFuqz5VtEt7KDIgNnmHca5BwCmLUZsIld50fTuofNCaDxQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+
+    <title>Railway system Projects</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #222222;
+        }
+
+
+        /* ================= HERO ================= */
+
+        .hero {
+            min-height: 395px;
+
+            background: #ffffff;
+
+            color: #222222;
+
+            text-align: center;
+
+            padding: 75px 20px 50px;
+
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .code-icon {
+            font-size: 58px;
+            margin-bottom: 25px;
+            color: #d2691e;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 22px;
+            color: #222222;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #555555;
+        }
+
+
+        /* ================= PROJECT SECTION ================= */
+
+        .projects {
+            padding: 75px 8%;
+            text-align: center;
+        }
+
+        .projects h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #222222;
+        }
+
+        .projects > p {
+            color: #666666;
+            font-size: 18px;
+            margin-bottom: 45px;
+        }
+
+
+        /* ================= CARDS ================= */
+
+        .cards {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 28px;
+        }
+
+        .card {
+            background: #ffffff;
+
+            border-radius: 12px;
+
+            padding: 38px 25px 30px;
+
+            border: 1px solid #dddddd;
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.10);
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+
+            border-color: #d2691e;
+
+            box-shadow:
+                0 12px 30px rgba(210, 105, 30, 0.20);
+        }
+
+
+        /* ================= ICON ================= */
+
+        .icon {
+            width: 80px;
+            height: 80px;
+
+            border-radius: 50%;
+
+            background: #fff3e8;
+
+            color: #d2691e;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            margin: 0 auto 25px;
+
+            font-size: 27px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .card:hover .icon {
+            background: #d2691e;
+            color: #ffffff;
+        }
+
+
+        /* ================= CARD TEXT ================= */
+
+        .card h3 {
+            font-size: 27px;
+
+            margin-bottom: 12px;
+
+            color: #222222;
+        }
+
+        .card p {
+            color: #666666;
+
+            min-height: 48px;
+
+            margin-bottom: 25px;
+
+            font-size: 16px;
+
+            line-height: 1.5;
+        }
+
+
+        /* ================= BUTTON ================= */
+
+        .btn {
+            display: inline-block;
+
+            text-decoration: none;
+
+            background: #d2691e;
+
+            color: white;
+
+            padding: 12px 25px;
+
+            border-radius: 7px;
+
+            font-size: 16px;
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #222222;
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #222222;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 22px;
+
+            font-size: 15px;
+
+            border-top: 4px solid #d2691e;
+        }
+
+
+        /* ================= TABLET ================= */
+
+        @media (max-width: 900px) {
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+        }
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 600px) {
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                min-height: 330px;
+
+                padding-top: 60px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .projects {
+                padding: 55px 6%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <section class="hero">
+
+        <div class="code-icon">
+            &lt;/&gt;
+        </div>
+
+        <h1>
+            Railway Saytem Projects
+        </h1>
+
+        <p>
+            My C++ Programming Practice Programs
+        </p>
+
+    </section>
+
+
+    <!-- ================= BACK BUTTON ================= -->
+
+    <div style="margin-top: 40px; text-align: left;">
+
+        <a href="../index.html" class="btn">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Back to Home
+
+        </a>
+
+    </div>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section class="projects">
+
+        <h2>
+            My Projects
+        </h2>
+
+        <p>
+            Select a program to open the file
+        </p>
+
+
+        <div class="cards">
+
+
+            <!-- C++ PROGRAM -->
+
+            <div class="card">
+
+                <div class="icon">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                </div>
+
+                <h3>
+                    Railway Syatem
+                </h3>
+
+                <p>
+                    C++ program Railway syatem.
+                </p>
+
+                <a href="reailway.cpp"
+                   target="_blank"
+                   class="btn">
+
+                    Open Program
+
+                </a>
+
+            </div>
+
+
+            <!-- VIDEO -->
+
+            <div class="card">
+
+                <div class="icon">
+                    ▶
+                </div>
+
+                <h3>
+                    Railway system Video
+                </h3>
+
+                <p>
+                    Watch the C++ programming related Railway system video.
+                </p>
+
+                <a href="time.webm"
+                   target="_blank"
+                   class="btn">
+
+                    Watch Video
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
