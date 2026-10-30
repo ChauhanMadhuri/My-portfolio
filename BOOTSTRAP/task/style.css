@@ -1,0 +1,65 @@
+.btn2 {
+    background-color: #750B0A;
+    padding: 0.5rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.nairobi_back {
+    background-color: #161616;
+    border: none;
+    border-radius: 45px;
+    min-height: 430px;
+}
+ .sidebar {
+    width: 86px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar a {
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 23px;
+    padding: 17px 0;
+    text-decoration: none;
+
+    border-left: 4px solid transparent;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: linear-gradient(to right, #ff2638, #111);
+    /* border-left-color: #ff2638; */
+    color: white;
+}
+
+.main-content {
+    margin-left: 86px;
+  }
+.search-box::placeholder {
+     color: #999;
+  } 
+  .team-chat {
+    background-color: #212529;
+    border-radius: 25px;
+    color: white;
+    overflow: hidden;
+}
+.card-hover:hover
+{
+    background: linear-gradient(to right, #ff2638, #111);
+    color: white;
+}
+
+.team-chat img {
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.progress {
+    height: 8px;
+}
